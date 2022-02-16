@@ -476,7 +476,7 @@ button:hover {
 * Section-main =======================================
 */
 .section-main {
-  background-image: url(/src/img/background-main.jpg);
+  background-image: url(../img/background-main.jpg);
   background-size: cover;
 }
 .section-main .section-main-wrapper {
@@ -640,7 +640,7 @@ button:hover {
   text-align: center;
 }
 .section-control__subtitle::before {
-  content: url(/src/img/line.svg);
+  content: url(../img/line.svg);
 }
 .section-control__form {
   color: rgba(54, 54, 54, 0.5);
@@ -758,7 +758,7 @@ button:hover {
 .section-control__form .form-checkbox .custom-checkbox:checked + label::before {
   border-color: #e3b873;
   background-color: #e3b873;
-  background-image: url("/src/img/checkbox.svg");
+  background-image: url("../img/checkbox.svg");
 }
 
 /*
@@ -804,13 +804,13 @@ button:hover {
   padding-bottom: 412px;
 }
 .section-types-of-repair .repair-wrapper .repair-up-container .box-1 {
-  background-image: url(/src/img/repair-img-1.jpg);
+  background-image: url(../img/repair-img-1.jpg);
 }
 .section-types-of-repair .repair-wrapper .repair-up-container .box-2 {
-  background-image: url(/src/img/repair-img-2.jpg);
+  background-image: url(../img/repair-img-2.jpg);
 }
 .section-types-of-repair .repair-wrapper .repair-up-container .box-3 {
-  background-image: url(/src/img/repair-img-3.jpg);
+  background-image: url(../img/repair-img-3.jpg);
 }
 .section-types-of-repair .repair-wrapper .repair-up-container .box {
   width: 392px;
@@ -887,7 +887,7 @@ button:hover {
           justify-content: flex-start;
   width: 730px;
   height: 654px;
-  background-image: url(/src/img/repair-gray-img.jpg);
+  background-image: url(../img/repair-gray-img.jpg);
   background-repeat: no-repeat;
 }
 .section-types-of-repair .left-box__list-item {
@@ -932,7 +932,7 @@ button:hover {
   padding-left: 50px;
 }
 .section-types-of-repair .right-box__form2 .form2-box::after {
-  content: url(/src/img/line2.svg);
+  content: url(../img/line2.svg);
 }
 .section-types-of-repair .right-box__form2 .form2-box .label2 {
   display: block;
@@ -1070,7 +1070,7 @@ button:hover {
 .section-types-of-repair .right-box__form2 .form2-checkbox2 .custom-checkbox2:checked + label::before {
   border-color: #e3b873;
   background-color: #e3b873;
-  background-image: url("/src/img/checkbox.svg");
+  background-image: url("../img/checkbox.svg");
 }
 .section-types-of-repair .right-box__form2 .form2-button {
   margin-left: 245px;
@@ -1091,7 +1091,7 @@ button:hover {
 .container3 {
   margin-top: 210px;
   width: 1440px;
-  background-image: url(/src/img/container3-background.png);
+  background-image: url(../img/container3-background.png);
   background-repeat: no-repeat;
 }
 .container3 .container3-background {
@@ -1229,7 +1229,7 @@ button:hover {
 * section-questions ==========================================
 */
 .section-questions {
-  background-image: url(/src/img/section-questions-background.png);
+  background-image: url(../img/section-questions-background.png);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1292,10 +1292,10 @@ button:hover {
   padding-left: 50px;
 }
 .section-questions .question__form3 .form3-box::after {
-  content: url(/src/img/line3.svg);
+  content: url(../img/line3.svg);
 }
 .section-questions .question__form3 .form3-box:nth-child(3)::after {
-  content: url(/src/img/line3-1.svg);
+  content: url(../img/line3-1.svg);
 }
 .section-questions .question__form3 .form3-box .label3 {
   display: block;
@@ -1435,7 +1435,7 @@ button:hover {
 .section-questions .question__form3 .form3-checkbox3 .custom-checkbox3:checked + label::before {
   border-color: #e3b873;
   background-color: #e3b873;
-  background-image: url("/src/img/checkbox.svg");
+  background-image: url("../img/checkbox.svg");
 }
 .section-questions .question__form3 .form3-button {
   width: 200px;

@@ -487,7 +487,7 @@ button {
 */
 
 .section-main {
-	background-image: url(/src/img/background-main.jpg);
+	background-image: url(../img/background-main.jpg);
 	background-size: cover;
 
 	.section-main-wrapper {
@@ -661,7 +661,7 @@ button {
 		text-align: center;
 
 		&::before {
-			content: url(/src/img/line.svg);
+			content: url(../img/line.svg);
 		}
 	}
 
@@ -753,7 +753,7 @@ button {
 			.custom-checkbox:checked + label::before {
 				border-color: $gold;
 				background-color: $gold;
-				background-image: url("/src/img/checkbox.svg");
+				background-image: url("../img/checkbox.svg");
 			}
 		}
 	}
@@ -789,15 +789,15 @@ button {
 			padding-bottom: 412px;
 
 			.box-1 {
-				background-image: url(/src/img/repair-img-1.jpg);
+				background-image: url(../img/repair-img-1.jpg);
 			}
 
 			.box-2 {
-				background-image: url(/src/img/repair-img-2.jpg);
+				background-image: url(../img/repair-img-2.jpg);
 			}
 
 			.box-3 {
-				background-image: url(/src/img/repair-img-3.jpg);
+				background-image: url(../img/repair-img-3.jpg);
 			}
 
 			.box {
@@ -863,7 +863,7 @@ button {
 		justify-content: flex-start;
 		width: 730px;
 		height: 654px;
-		background-image: url(/src/img/repair-gray-img.jpg);
+		background-image: url(../img/repair-gray-img.jpg);
 		background-repeat: no-repeat;
 
 		&__list-item {
@@ -906,7 +906,7 @@ button {
 				padding-left: 50px;
 
 				&::after {
-					content: url(/src/img/line2.svg);
+					content: url(../img/line2.svg);
 				}
 
 				.label2 {
@@ -994,7 +994,7 @@ button {
 				.custom-checkbox2:checked + label::before {
 					border-color: $gold;
 					background-color: $gold;
-					background-image: url("/src/img/checkbox.svg");
+					background-image: url("../img/checkbox.svg");
 				}
 			}
 
@@ -1020,7 +1020,7 @@ button {
 .container3 {
 	margin-top: 210px;
 	width: 1440px;
-	background-image: url(/src/img/container3-background.png);
+	background-image: url(../img/container3-background.png);
 	background-repeat: no-repeat;
 
 .container3-background {
@@ -1159,7 +1159,7 @@ button {
 */
 
 .section-questions {
-	background-image: url(/src/img/section-questions-background.png);
+	background-image: url(../img/section-questions-background.png);
 	justify-content: center;
 	display: flex;
 
@@ -1208,11 +1208,11 @@ button {
 				padding-left: 50px;
 
 				&::after {
-					content: url(/src/img/line3.svg);
+					content: url(../img/line3.svg);
 				}
 
 				&:nth-child(3)::after {
-					content: url(/src/img/line3-1.svg);
+					content: url(../img/line3-1.svg);
 				}
 
 				.label3 {
@@ -1302,7 +1302,7 @@ button {
 				.custom-checkbox3:checked + label::before {
 					border-color: $gold;
 					background-color: $gold;
-					background-image: url("/src/img/checkbox.svg");
+					background-image: url("../img/checkbox.svg");
 				}
 			}
 
