@@ -31,14 +31,14 @@ html {
    */
 
 body {
-	margin: 0;
+	margin: 0 auto;
 	font-family: "Nunito Sans";
 	font-style: normal;
 	color: $white;
 	font-size: 14px;
 	background: #131313;
 	box-sizing: border-box;
-	width: 1440px;
+	max-width: 1440px;
 }
 
 /**
@@ -492,7 +492,7 @@ button {
 
 	.section-main-wrapper {
 		background: rgba(0, 0, 0, 0.7);
-		width: 676px;
+		max-width: 676px;
 		padding: 188px 640px 208px 124px;
 
 		&__title {
@@ -532,7 +532,7 @@ button {
 }
 .section-project-wrapper {
 	max-width: 1171px;
-	padding: 107px 134px 414px 134px;
+	padding: 107px 134px 400px 134px;
 	display: flex;
 
 	.left-content-container {
@@ -591,7 +591,7 @@ button {
 
 	.right-content-container {
 		&__gallery-image {
-			width: 679px;
+			max-width: 679px;
 			height: 482px;
 		}
 
@@ -632,18 +632,38 @@ button {
 	color: $gray;
 
 	.section-control-wrapper {
-		width: 817px;
+		max-width: 817px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		margin-top: -339px;
+		margin-top: -345px;
 	}
 
 	&__title {
 		padding: 0 0 22px 0;
 
+		.control-title {
+			text-transform: uppercase;
+			color: $white;
+			font-size: 20px;
+			line-height: 28px;
+		}
+
 		.title-img {
+			margin-left: 32px;
+			display: flex;
+			align-items: center;
+			width: 120px;
+			justify-content: space-around;
+
+			&::before {
+				content: url(../img/line-icon-short.svg);
+			}
+
+			&::after {
+				content: url(../img/line-icon-short.svg);
+			}
 		}
 	}
 
@@ -655,7 +675,7 @@ button {
 	}
 
 	&__subtitle {
-		width: 652px;
+		max-width: 652px;
 		font-size: 18px;
 		line-height: 37px;
 		text-align: center;
@@ -733,6 +753,7 @@ button {
 				display: inline-flex;
 				align-items: center;
 				user-select: none;
+				cursor: pointer;
 			}
 
 			.custom-checkbox + label::before {
@@ -765,6 +786,11 @@ button {
 
 .section-types-of-repair {
 	background-color: $white;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.repair-typer-top-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -774,11 +800,19 @@ button {
 		width: 1236px;
 
 		.repair-title {
-			padding-top: 143px;
-			padding-bottom: 31px;
+			padding: 127px 0 26px 0;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-direction: column;
+
+			.repair-wrapper-title {
+				font-size: 20px;
+				line-height: 28px;
+				text-align: center;
+				text-transform: uppercase;
+				color: $black;
+			}
 
 			&__img {
 			}
@@ -851,198 +885,204 @@ button {
 			}
 		}
 	}
-	.repair-bottom-container {
-		width: 100%;
+}
+
+.repair-bottom-container {
+	background-image: url(../img/repair-gray-img.jpg);
+	background-repeat: no-repeat;
+
+	.repair-bottom-container-wrapper {
 		display: flex;
 		justify-content: flex-start;
-	}
-	.left-box {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		width: 730px;
-		height: 654px;
-		background-image: url(../img/repair-gray-img.jpg);
-		background-repeat: no-repeat;
+		width: 1236px;
+		margin: 0 auto;
 
-		&__list-item {
-			max-height: 85px;
-			padding-left: 225px;
-			padding-bottom: 59px;
-		}
-	}
-
-	.right-box {
-		width: 506px;
-		height: 620px;
-		margin-left: 100px;
-
-		&__form2 {
-			width: 506px;
-			height: 480px;
-			background-color: $black;
-			color: rgba(54, 54, 54, 0.5);
-			padding-top: 33px;
+		.left-box {
 			display: flex;
 			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			width: 374px;
+			height: 473px;
+			margin: 0 231px 0 126px;
 
-			.form2-title {
-				width: 250px;
-				height: 47px;
-				font-size: 18px;
-				line-height: 26px;
-				text-align: center;
-				color: #ffffff;
-				margin: 0;
-				padding-bottom: 40px;
-				padding-left: 130px;
+			&__list-item {
+				max-height: 85px;
+				padding-bottom: 59px;
 			}
+		}
 
-			.form2-box {
-				width: 231px;
-				display: block;
-				padding-bottom: 40px;
-				padding-left: 50px;
+		.right-box {
+			width: 506px;
+			height: 619px;
 
-				&::after {
-					content: url(../img/line2.svg);
+			&__form2 {
+				width: 506px;
+				height: 480px;
+				background-color: $black;
+				color: rgba(54, 54, 54, 0.5);
+				padding-top: 33px;
+				display: flex;
+				flex-direction: column;
+
+				.form2-title {
+					width: 250px;
+					height: 47px;
+					font-size: 18px;
+					line-height: 26px;
+					text-align: center;
+					color: #ffffff;
+					margin: 0;
+					padding-bottom: 40px;
+					padding-left: 130px;
 				}
 
-				.label2 {
+				.form2-box {
+					width: 231px;
 					display: block;
-					padding-bottom: 8px;
-					color: rgba(255, 255, 255, 0.5);
+					padding-bottom: 40px;
+					padding-left: 50px;
+
+					&::after {
+						content: url(../img/line2.svg);
+					}
+
+					.label2 {
+						display: block;
+						padding-bottom: 8px;
+						color: rgba(255, 255, 255, 0.5);
+					}
 				}
-			}
 
-			#user-name2 {
-				background-color: $black;
-				color: $white;
-				border: none;
-				outline: none;
-				padding: 0;
-
-				&::placeholder {
-					color: $white;
+				#user-name2 {
 					background-color: $black;
+					color: $white;
 					border: none;
-				}
-			}
-			#user-phone2 {
-				background-color: $black;
-				color: $white;
-				border: none;
-				outline: none;
-				padding: 0;
+					outline: none;
+					padding: 0;
 
-				&::placeholder {
-					color: $white;
+					&::placeholder {
+						color: $white;
+						background-color: $black;
+						border: none;
+					}
+				}
+				#user-phone2 {
 					background-color: $black;
-				}
-			}
-
-			#user-email2 {
-				background-color: $black;
-				color: $white;
-				border: none;
-				outline: none;
-				padding: 0;
-
-				&::placeholder {
 					color: $white;
+					border: none;
+					outline: none;
+					padding: 0;
+
+					&::placeholder {
+						color: $white;
+						background-color: $black;
+					}
+				}
+
+				#user-email2 {
 					background-color: $black;
-				}
-			}
-
-			.form2-checkbox2 {
-				margin-top: -28px;
-				padding-left: 52px;
-				padding-bottom: 33px;
-
-				.label2 {
 					color: $white;
+					border: none;
+					outline: none;
+					padding: 0;
+
+					&::placeholder {
+						color: $white;
+						background-color: $black;
+					}
 				}
 
-				.custom-checkbox2 {
-					position: absolute;
-					z-index: -1;
-					opacity: 0;
+				.form2-checkbox2 {
+					margin-top: -28px;
+					padding-left: 52px;
+					padding-bottom: 33px;
+
+					.label2 {
+						color: $white;
+					}
+
+					.custom-checkbox2 {
+						position: absolute;
+						z-index: -1;
+						opacity: 0;
+					}
+
+					.custom-checkbox2 + label {
+						display: inline-flex;
+						align-items: center;
+						user-select: none;
+						cursor: pointer;
+					}
+
+					.custom-checkbox2 + label::before {
+						content: "";
+						display: inline-block;
+						width: 1em;
+						height: 1em;
+						flex-shrink: 0;
+						flex-grow: 0;
+						border: 1px solid #adb5bd;
+						border-radius: 0.25em;
+						margin-right: 0.5em;
+						background-repeat: no-repeat;
+						background-position: center center;
+						background-size: 50% 50%;
+					}
+
+					.custom-checkbox2:checked + label::before {
+						border-color: $gold;
+						background-color: $gold;
+						background-image: url("../img/checkbox.svg");
+					}
 				}
 
-				.custom-checkbox2 + label {
-					display: inline-flex;
-					align-items: center;
-					user-select: none;
+				.form2-button {
+					margin-left: 245px;
+					width: 213px;
+					height: 51px;
+					box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+					font-size: 13px;
+					line-height: 21px;
+					text-align: center;
+					text-transform: uppercase;
 				}
-
-				.custom-checkbox2 + label::before {
-					content: "";
-					display: inline-block;
-					width: 1em;
-					height: 1em;
-					flex-shrink: 0;
-					flex-grow: 0;
-					border: 1px solid #adb5bd;
-					border-radius: 0.25em;
-					margin-right: 0.5em;
-					background-repeat: no-repeat;
-					background-position: center center;
-					background-size: 50% 50%;
-				}
-
-				.custom-checkbox2:checked + label::before {
-					border-color: $gold;
-					background-color: $gold;
-					background-image: url("../img/checkbox.svg");
-				}
-			}
-
-			.form2-button {
-				margin-left: 245px;
-				width: 213px;
-				height: 51px;
-				box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
-				font-size: 13px;
-				line-height: 21px;
-				text-align: center;
-				text-transform: uppercase;
 			}
 		}
 	}
+}
 
-	.right-box__img-save-cost {
-		padding-top: 30px;
-		padding-left: 13px;
-	}
+.right-box__img-save-cost {
+	padding-top: 30px;
+	padding-left: 13px;
 }
 
 .container3 {
-	margin-top: 210px;
-	width: 1440px;
-	background-image: url(../img/container3-background.jpg);
+	margin-top: 247px;
+	background-image: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%),
+		url(../img/container3-background.jpg);
 	background-repeat: no-repeat;
 
-.container3-background {
-	background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
-}
-
 	.container3-wrapper {
-		height: 865px;
+		width: 1236px;
 		display: flex;
-		}
+		margin: 0 auto;
+		height: 864px;
+	}
+
 	.left-container {
 		width: 411px;
+		padding: 0 75px 0 0;
 	}
 	.container3-title {
 		font-size: 27px;
 		line-height: 37px;
 		text-transform: uppercase;
-		padding: 115px 0 15px 100px;
+		padding: 115px 0 15px 0;
 	}
 	.design-list {
 		list-style: none;
-		padding-left: 98px;
+		padding: 0;
 
 		&__item {
 			padding-bottom: 11px;
@@ -1066,7 +1106,6 @@ button {
 		width: 751px;
 		display: flex;
 		flex-wrap: wrap;
-		padding-left: 175px;
 		justify-content: space-between;
 
 		.img-box1 {
@@ -1095,10 +1134,10 @@ button {
 	justify-content: center;
 	display: flex;
 	text-align: center;
-	padding-bottom: 360px;
+	padding-bottom: 148px;
 
 	.section-clients-wrapper {
-		width: 1260px;
+		max-width: 1260px;
 
 		.clients-title {
 			margin: 0;
@@ -1119,9 +1158,11 @@ button {
 			padding-bottom: 45px;
 		}
 		.clients-container {
+			width: 1236px;
+			height: 642px;
 			display: flex;
 			justify-content: space-between;
-			padding-left: 30px;
+			margin-left: 33px;
 
 			.container-box {
 				width: 376px;
@@ -1136,17 +1177,18 @@ button {
 					line-height: 23px;
 					color: #181818;
 					padding-left: 23px;
+					text-align: start;
 				}
 				.box-subtitle {
 					font-size: 13px;
-					line-height: 23px;
+					line-height: 24px;
 					color: #959595;
 					text-align: start;
-					padding-right: 49px;
+					padding: 5px 49px 0 0px;
 				}
 
 				.box-img2 {
-					margin-top: 50px;
+					margin-top: 35px;
 					margin-left: -110px;
 				}
 			}
@@ -1159,42 +1201,34 @@ button {
 */
 
 .section-questions {
-	background-image: url(../img/section-questions-background.png);
+	background-image: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%),
+		url(../img/section-questions-background.png);
 	justify-content: center;
 	display: flex;
 
-	.section-question-background {
-		background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+	.section-questions-wripper {
+		max-width: 930px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
 	}
 
-	.section-questions-wripper {
-		width: 930px;
-			
-	}
 	.question {
 		&__form3 {
-			width: 750px;
-			height: 430px;
+			width: 883px;
+			height: 445px;
 			background-color: $black;
 			color: rgba(54, 54, 54, 0.5);
-			padding-top: 15px;
 			display: flex;
 			flex-direction: column;
-			margin-left: 30px;
-			margin-top: -225px;
-			padding-left: 135px;
+			margin: -225px 10px 0 auto;
 
 			.form3-title {
 				font-size: 20px;
 				line-height: 28px;
-				padding-left: 190px;
 				text-transform: uppercase;
 				color: $white;
-				padding-bottom: 30px;
+				padding: 15px 0 30px 325px;
 			}
 
 			.form3-upbox {
@@ -1202,10 +1236,8 @@ button {
 			}
 
 			.form3-box {
-				width: 231px;
-				display: block;
-				padding-bottom: 36px;
-				padding-left: 50px;
+				display: flex;
+				flex-direction: column;
 
 				&::after {
 					content: url(../img/line3.svg);
@@ -1219,6 +1251,18 @@ button {
 					display: block;
 					padding-bottom: 8px;
 					color: rgba(255, 255, 255, 0.5);
+				}
+
+				&_form3-box-1 {
+					padding-left: 180px;
+				}
+
+				&_form3-box-2 {
+					padding: 0 0 0 58px;
+				}
+
+				&_form3-box-3 {
+					padding: 38px 0 8px 181px;
 				}
 			}
 
@@ -1262,9 +1306,7 @@ button {
 			}
 
 			.form3-checkbox3 {
-				margin-top: -28px;
-				padding-left: 52px;
-				padding-bottom: 46px;
+				padding: 0 0 0 190px;
 
 				.label3 {
 					color: $white;
@@ -1282,6 +1324,7 @@ button {
 					display: inline-flex;
 					align-items: center;
 					user-select: none;
+					cursor: pointer;
 				}
 
 				.custom-checkbox3 + label::before {
@@ -1314,26 +1357,25 @@ button {
 				line-height: 21px;
 				text-align: center;
 				text-transform: uppercase;
-				margin-left: 210px;
+				margin: 45px 0 0 341px;
 			}
 		}
 	}
 	.questions-contact {
 		text-align: center;
-		padding-top: 35px;
-		padding-bottom: 45px;
+		padding: 35px 0 40px 0;
 	}
 	.contact-title {
 		font-size: 20px;
 		line-height: 28px;
 		text-align: center;
 		text-transform: uppercase;
+		padding-bottom: 7px;
 	}
-	
+
 	.questions-map {
 		padding-bottom: 60px;
 	}
-	
 }
 
 /*
@@ -1371,31 +1413,29 @@ button {
 	&__button {
 		width: 161px;
 		height: 37px;
-		padding: 6px 16px;
 		font-style: italic;
 		text-transform: uppercase;
 		box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 	}
 
+	.navigation {
+		&__menu {
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0;
 
-.navigation {
-	&__menu {
-		list-style: none;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0;
+			&_item {
+				color: $white;
+				text-decoration: none;
+				padding: 0 28px;
 
-		&_item {
-			color: $white;
-			text-decoration: none;
-			padding: 0 28px;
-
-			&:hover {
-				color: $gold;
+				&:hover {
+					color: $gold;
+				}
 			}
 		}
 	}
-}
 }
