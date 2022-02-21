@@ -44,7 +44,8 @@ body {
 		max-width: 2500px;
 	}
 
-	
+	@media screen and (max-width: 768px) {
+	}
 }
 
 /**
@@ -392,8 +393,9 @@ button {
 	background-color: $gold;
 	border: 1px solid $gold;
 	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
 	cursor: pointer;
-	line-height: 50%;
 
 	&:hover {
 		background: none;
@@ -435,6 +437,12 @@ button {
 	height: 83px;
 	white-space: nowrap;
 
+	@media screen and (max-width: 768px) {
+		justify-content: space-between;
+		margin: 0 18px 0 18px;
+		max-width: 100%;
+	}
+
 	&__title {
 		color: $gold;
 		color: $gold;
@@ -451,6 +459,10 @@ button {
 		&:hover {
 			color: $white;
 		}
+
+		@media screen and (max-width: 768px) {
+			padding: 0;
+		}
 	}
 
 	&__button {
@@ -460,40 +472,37 @@ button {
 		font-style: italic;
 		text-transform: uppercase;
 		box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-	
+
 		@media screen and (max-width: 768px) {
 			display: none;
-						}
-	}
-
-
-.navigation {
-	&__menu {
-		list-style: none;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0;
-
-		&_item {
-			color: $white;
-			text-decoration: none;
-			padding: 0 28px;
-
-			&:hover {
-				color: $gold;
-			}
 		}
 	}
 
-	@media screen and (max-width: 768px) {
-		display: none;
-					}
-}
-}
+	.navigation {
+		&__menu {
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0;
 
+			&_item {
+				color: $white;
+				text-decoration: none;
+				padding: 0 28px;
 
+				&:hover {
+					color: $gold;
+				}
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+}
 
 /*
 * Main ================================================
@@ -504,17 +513,23 @@ button {
 */
 
 .section-main {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/main/section-main/background-img.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+		url(../img/main/section-main/background-img.jpg);
 	background-size: cover;
-
-
+	background-position: center;
 
 	.section-main-wrapper {
 		justify-content: center;
 		max-width: 576px;
-		min-height: 305px;
+		max-height: 305px;
 		padding: 188px 0 208px 0;
 		margin: 0 120px;
+
+		@media screen and (max-width: 768px) {
+			margin: 0 18px 0 18px;
+			max-width: 100%;
+			padding-top: 85px;
+		}
 
 		&__title {
 			font-family: "Yeseva One";
@@ -523,6 +538,13 @@ button {
 			text-transform: uppercase;
 			margin-block: 0;
 			padding: 0px 0px 0px 10px;
+
+			@media screen and (max-width: 768px) {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 23px;
+				line-height: 31px;
+			}
 		}
 
 		&__subtitle {
@@ -530,6 +552,11 @@ button {
 			line-height: 36px;
 			padding: 18px 0px 0px 10px;
 			margin-block: 0;
+
+			@media screen and (max-width: 768px) {
+				font-size: 14px;
+				line-height: 19px;
+			}
 		}
 
 		&__item {
@@ -541,6 +568,11 @@ button {
 			height: 51px;
 			font-size: 11px;
 			margin-right: 17px;
+
+			@media screen and (max-width: 768px) {
+				width: 300px;
+				margin-bottom: 26px;
+			}
 		}
 	}
 }
@@ -550,7 +582,6 @@ button {
 */
 
 .section-projects {
-	
 	&__wrapper {
 		max-width: 1171px;
 		padding: 107px 0 400px 0;
@@ -560,7 +591,10 @@ button {
 		@media screen and (max-width: 768px) {
 			flex-wrap: wrap;
 			justify-content: center;
-			}
+			margin: 0 18px;
+			width: 100%;
+			padding-bottom: 58px;
+		}
 	}
 
 	&__left-container {
@@ -568,6 +602,9 @@ button {
 	}
 
 	&__right-container {
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
 	}
 }
 
@@ -580,22 +617,34 @@ button {
 		line-height: 37px;
 		letter-spacing: -0.07em;
 		text-transform: uppercase;
+
+		@media screen and (max-width: 768px) {
+			font-size: 22px;
+line-height: 30px;
+text-align: center;
+		}
 	}
 
 	&__subtitle {
 		padding-top: 3px;
 		font-size: 14px;
 		line-height: 27px;
+
+		@media screen and (max-width: 768px) {
+			font-size: 11px;
+line-height: 17px;
+text-align: center;
+		}
 	}
 }
 
 .parameters-container {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .up-parameters-box {
-display: flex;
+	display: flex;
 }
 
 .bottom-parameters-box {
@@ -603,7 +652,7 @@ display: flex;
 }
 
 .parameters-box {
-	width: 191px;
+	width: 172px;
 	padding-top: 16px;
 
 	&__title {
@@ -627,11 +676,11 @@ display: flex;
 
 	@media screen and (max-width: 768px) {
 		display: none;
-		}
+	}
 }
 
 .section-projects-image {
-width: 100%;
+	width: 100%;
 }
 
 .projects-list {
@@ -643,7 +692,7 @@ width: 100%;
 
 	@media screen and (max-width: 768px) {
 		display: none;
-		}
+	}
 
 	&__link {
 		font-family: "Yeseva One";
@@ -675,7 +724,7 @@ width: 100%;
 
 	@media screen and (max-width: 768px) {
 		background-color: $black;
-		}
+	}
 
 	.section-control-wrapper {
 		max-width: 817px;
@@ -684,19 +733,28 @@ width: 100%;
 		align-items: center;
 		flex-direction: column;
 		margin-top: -345px;
+
+		@media screen and (max-width: 768px) {
+			margin: 0 18px 0 18px;
+			max-width: 100%;
+		}
 	}
 
 	&__title {
 		padding: 0 0 22px 0;
+
+		@media screen and (max-width: 768px) {
+			padding: 0 0 40px 0;
+		}
 	}
 
 	&__video {
 		padding-bottom: 30px;
-				}
+	}
 
-		.video-img {
-			width: 100%;
-		}
+	.video-img {
+		width: 100%;
+	}
 
 	&__subtitle {
 		max-width: 652px;
@@ -706,7 +764,9 @@ width: 100%;
 
 		@media screen and (max-width: 768px) {
 			color: $white;
-			}
+			font-size: 11px;
+			line-height: 19px;
+		}
 
 		&::before {
 			content: url(../img/line.svg);
@@ -745,7 +805,7 @@ width: 100%;
 	justify-content: center;
 
 	@media screen and (max-width: 768px) {
-flex-direction: column;	
+		flex-direction: column;
 	}
 
 	&__item {
@@ -754,8 +814,8 @@ flex-direction: column;
 		padding-right: 54px;
 
 		@media screen and (max-width: 768px) {
-					padding-bottom: 70px;
-				}
+			padding-bottom: 70px;
+		}
 	}
 
 	.item-form-control {
@@ -838,7 +898,7 @@ flex-direction: column;
 		background-color: $black;
 		border-bottom: 1px solid $white;
 	}
-	
+
 	&::placeholder {
 		color: #363636;
 
@@ -865,7 +925,6 @@ flex-direction: column;
 		@media screen and (max-width: 768px) {
 			color: $white;
 			background-color: $black;
-
 		}
 	}
 }
@@ -888,6 +947,11 @@ flex-direction: column;
 
 	&__wrapper {
 		width: 1236px;
+
+		@media screen and (max-width: 768px) {
+			margin: 0 18px 0 18px;
+			max-width: 100%;
+		}
 	}
 
 	&__title-container {
@@ -906,8 +970,8 @@ flex-direction: column;
 		@media screen and (max-width: 768px) {
 			flex-wrap: wrap;
 			justify-content: center;
-			padding-bottom: 0;	
-					}
+			padding-bottom: 0;
+		}
 	}
 }
 
@@ -929,7 +993,7 @@ flex-direction: column;
 
 	@media screen and (max-width: 768px) {
 		margin-bottom: 250px;
-				}
+	}
 
 	&_container1 {
 		background-image: url(../img/main/section-types-of-repair/article-types-of-repair/background-img-1.jpg);
@@ -997,7 +1061,7 @@ flex-direction: column;
 
 	@media screen and (max-width: 768px) {
 		display: none;
-				}
+	}
 
 	&__wrapper {
 		display: flex;
@@ -1180,18 +1244,22 @@ flex-direction: column;
 
 	@media screen and (max-width: 768px) {
 		background-image: url(../img/main/section-types-of-repair/article-types-of-design/background.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
-	padding: 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+		text-align: center;
+		padding: 0;
 	}
-
 
 	&__wrapper {
 		max-width: 1236px;
 		display: flex;
 		margin: 0 auto;
 		height: 864px;
+
+		@media screen and (max-width: 768px) {
+			margin: 0 18px 0 18px;
+			max-width: 100%;
+		}
 	}
 
 	&__left-container {
@@ -1206,9 +1274,9 @@ flex-direction: column;
 		padding: 115px 0 15px 0;
 
 		@media screen and (max-width: 768px) {
-		text-align: center;
-		padding: 0;
-		margin: -100px auto;
+			text-align: center;
+			padding: 0;
+			margin: -100px auto;
 		}
 	}
 
@@ -1220,7 +1288,7 @@ flex-direction: column;
 
 		@media screen and (max-width: 768px) {
 			display: none;
-			}
+		}
 	}
 }
 .types-of-design-img {
@@ -1246,7 +1314,7 @@ flex-direction: column;
 
 	@media screen and (max-width: 768px) {
 		display: none;
-		}
+	}
 
 	&__item {
 		padding-bottom: 11px;
@@ -1279,8 +1347,8 @@ flex-direction: column;
 	padding-bottom: 148px;
 
 	@media screen and (max-width: 768px) {
-		display: none;;
-					}
+		display: none;
+	}
 
 	.section-clients-wrapper {
 		max-width: 1260px;
@@ -1354,13 +1422,18 @@ flex-direction: column;
 
 	@media screen and (max-width: 768px) {
 		justify-content: flex-end;
-			}
+	}
 
-	.section-questions-wripper {
+	.section-questions-wrapper {
 		max-width: 930px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+		@media screen and (max-width: 768px) {
+			margin: 0 18px 0 18px;
+			max-width: 100%;
+		}
 	}
 
 	.questions {
@@ -1378,7 +1451,7 @@ flex-direction: column;
 				width: auto;
 				padding: 0;
 				margin: 0;
-					}
+			}
 
 			.form3-title {
 				font-size: 20px;
@@ -1390,15 +1463,15 @@ flex-direction: column;
 				@media screen and (max-width: 768px) {
 					padding: 0;
 					margin: 0;
-						}
+				}
 			}
 
 			.form3-upbox {
 				display: flex;
 
 				@media screen and (max-width: 768px) {
-					flex-direction: column;	
-						}
+					flex-direction: column;
+				}
 			}
 
 			.form3-box {
@@ -1408,7 +1481,7 @@ flex-direction: column;
 				@media screen and (max-width: 768px) {
 					padding: 0;
 					margin: 0;
-						}
+				}
 
 				&::after {
 					content: url(../img/line3.svg);
@@ -1430,7 +1503,7 @@ flex-direction: column;
 					@media screen and (max-width: 768px) {
 						padding: 0;
 						margin: 0;
-							}
+					}
 				}
 
 				&_form3-box-2 {
@@ -1439,7 +1512,7 @@ flex-direction: column;
 					@media screen and (max-width: 768px) {
 						padding: 0;
 						margin: 0;
-							}
+					}
 				}
 
 				&_form3-box-3 {
@@ -1448,7 +1521,7 @@ flex-direction: column;
 					@media screen and (max-width: 768px) {
 						padding: 0;
 						margin: 0;
-							}
+					}
 				}
 			}
 
@@ -1497,7 +1570,7 @@ flex-direction: column;
 				@media screen and (max-width: 768px) {
 					padding: 0;
 					margin: 0;
-						}
+				}
 
 				.label3 {
 					color: $white;
@@ -1507,7 +1580,7 @@ flex-direction: column;
 					@media screen and (max-width: 768px) {
 						padding: 0;
 						margin: 0;
-							}
+					}
 				}
 
 				.custom-checkbox3 {
@@ -1558,7 +1631,7 @@ flex-direction: column;
 				@media screen and (max-width: 768px) {
 					padding: 0;
 					margin: 0;
-						}
+				}
 			}
 		}
 	}
@@ -1578,14 +1651,13 @@ flex-direction: column;
 		padding-bottom: 60px;
 
 		.question-map-img {
-
-		@media screen and (max-width: 768px) {
-			flex-direction: column;
-			width: 100%;
-			padding: 0;
-				}
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+				width: 100%;
+				padding: 0;
+			}
+		}
 	}
-}
 }
 
 /*
@@ -1603,8 +1675,8 @@ flex-direction: column;
 	white-space: nowrap;
 
 	@media screen and (max-width: 768px) {
-		display: none;	
-				}
+		display: none;
+	}
 
 	&__title {
 		color: $gold;
@@ -1630,10 +1702,10 @@ flex-direction: column;
 		font-style: italic;
 		text-transform: uppercase;
 		box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-	
+
 		@media screen and (max-width: 768px) {
 			display: none;
-						}
+		}
 	}
 
 	.navigation {
@@ -1658,6 +1730,6 @@ flex-direction: column;
 
 		@media screen and (max-width: 768px) {
 			display: none;
-						}
+		}
 	}
 }
