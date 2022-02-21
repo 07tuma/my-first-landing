@@ -29,7 +29,7 @@
     <main>
         <section class="section-main" id="home">
             <div class="section-main-wrapper">
-                <h1 class="section-main-wrapper__title">Turnkey Repair in the <br>city of <span
+                <h1 class="section-main-wrapper__title">Turnkey Repair in the city of <span
                         class="text-color-gold">Rostov-on-Don</span></h1>
                 <p class="section-main-wrapper__subtitle">Get ready-made turnkey repairs on time <br>with work time
                     saving up to 45 days and 20% from
@@ -43,47 +43,51 @@
             </div>
         </section>
 
-        <section class="section-project" id="projects">
-            <div class="section-project-wrapper">
-                <div class="left-content-container">
-                    <div class="left-content-container__up">
-                        <h2 class="left-content-container__title">Completed <br>projects</h2>
-                        <p class="left-content-container__subtitle">Only a small part of the work performed by our
+        <section class="section-projects" id="projects">
+            <div class="section-projects__wrapper">
+                <div class="section-projects__left-container">
+                    <div class="title-container">
+                        <h2 class="title-container__title">Completed <br>projects</h2>
+                        <p class="title-container__subtitle">Only a small part of the work performed by our
                             company
                             is presented <br>on the site. For 14
                             years
                             on in the construction <br>market we have made happy more than 1000 families</p>
                     </div>
-                    <div class="left-content-container__bottom">
-                        <div class="smallbox">
-                            <h3 class="smallbox__title">city:</h3>
-                            <p class="smallbox__subtitle">Rostov-on-Don <br>LCD admiral 81 m2</p>
+                    <div class="parameters-container">
+                        <div class="up-parameters-box">
+                            <div class="parameters-box">
+                                <h3 class="parameters-box__title">city:</h3>
+                                <p class="parameters-box__subtitle">Rostov-on-Don <br>LCD admiral 81 m2</p>
+                            </div>
+                            <div class="parameters-box">
+                                <h3 class="parameters-box__title">apartment area:</h3>
+                                <p class="parameters-box__subtitle">81 m2</p>
+                            </div>
                         </div>
-                        <div class="smallbox">
-                            <h3 class="smallbox__title">apartment area:</h3>
-                            <p class="smallbox__subtitle">81 m2</p>
-                        </div>
-                        <div class="smallbox">
-                            <h3 class="smallbox__title">Repair time:</h3>
-                            <p class="smallbox__subtitle">3.5 months</p>
-                        </div>
-                        <div class="smallbox">
-                            <h3 class="smallbox__title">Repair Cost:</h3>
-                            <p class="smallbox__subtitle">Upon request</p>
-                        </div>
+                       <div class="bottom-parameters-box">
+                            <div class="parameters-box">
+                                <h3 class="parameters-box__title">Repair time:</h3>
+                                <p class="parameters-box__subtitle">3.5 months</p>
+                            </div>
+                            <div class="parameters-box">
+                                <h3 class="parameters-box__title">Repair Cost:</h3>
+                                <p class="parameters-box__subtitle">Upon request</p>
+                            </div>
+                       </div>
                     </div>
-                    <div class="left-content-container__carousel">
-                        <span class="carousel-img">&larr; &bull; &bull; &bull; &rarr;</span>
+                    <div class="left-container-carousel">
+                        <span>&larr; &bull; &bull; &bull; &rarr;</span>
                     </div>
                 </div>
-                <div class="right-content-container">
-                    <ul class="boxlist">
-                        <li><a class="boxlist__link" href="">Rostov-on-Don, Admiral</a></li>
-                        <li><a class="boxlist__link" href="">Sochi Thieves</a></li>
-                        <li><a class="boxlist__link" href="">Rostov-on-Don Patriotic</a></li>
+                <div class="section-projects__right-container">
+                    <ul class="projects-list">
+                        <li><a class="projects-list__link" href="">Rostov-on-Don, Admiral</a></li>
+                        <li><a class="projects-list__link" href="">Sochi Thieves</a></li>
+                        <li><a class="projects-list__link" href="">Rostov-on-Don Patriotic</a></li>
                     </ul>
-                    <img class="right-content-container__gallery-image" src="./src/img/gallery-image-1.png"
-                        alt="gallery-image-1">
+                    <img class="section-projects-image" src="./src/img/main/section-projects/gallery-image-1.png"
+                        alt="projects-image-1">
                 </div>
             </div>
             </div>
@@ -92,10 +96,10 @@
             <div class="section-control-wrapper">
                 <div class="section-control__title">
                     <h2 class="control-title">online control</h2>
-                    <div class="title-img"><img class="" src="./src/img/online-control-icon.svg" alt="title-img"></div>
+                    <div class="control-title-img"><img class="" src="./src/img/main/section-control/title-icon.svg" alt="title-img"></div>
                 </div>
                 <div class="section-control__video">
-                    <img class="video-img_" src="./src/img/Video.png" alt="video-img">
+                    <img class="video-img" src="./src/img/main/section-control/video-img.png" alt="video-img">
                 </div>
                 <div class="section-control__subtitle">
                     <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any
@@ -103,35 +107,37 @@
                         watch the live broadcast from one of our facilities!
                         Leave a request below and you will receive a link to the broadcast.</p>
                 </div>
-                <form class="section-control__form">
-                    <div class="form-box">
-                        <label class="label" for="user-name">Name</label>
-                        <input id="user-name" placeholder="What is your name:" name="name" type="text">
+                <form class="control-form">
+                    <div class="control-form__item">
+                        <label class="item-form-control__label" for="item-form-control__user-name">Name</label>
+                        <input id="item-form-control__user-name" placeholder="What is your name:" name="name" type="text">
                     </div>
-                    <div class="form-box">
-                        <label class="label" for="user-phone">Phone</label>
-                        <input id="user-phone" placeholder="Your phone number:" name="phone" type="tel">
+                    <div class="control-form__item">
+                        <label class="item-form-control__label" for="item-form-control__user-phone">Phone</label>
+                        <input id="item-form-control__user-phone" placeholder="Your phone number:" name="phone" type="tel">
                     </div>
-                    <div class="form-button"><button class="form-button button_with-radius">Submit</button></div>
-                    <div class="form-checkbox">
-                        <input id="checkbox" class="custom-checkbox" name="checkbox" type="checkbox">
-                        <label class="label" for="checkbox">I agree to the processing of personal data</label>
+                    <div class="control-form__button"><button class="control-form-button button_with-radius">Submit</button></div>
+                    <div class="form-control__checkbox">
+                        <input id="checkbox-form-control__input" class="checkbox-form-control__input" name="checkbox" type="checkbox">
+                        <label class="checkbox-form-control__label" for="checkbox-form-control__input">I agree to the processing of personal data</label>
                     </div>
                 </form>
             </div>
         </section>
         <section class="section-types-of-repair" id="team">
-            <div class="repair-typer-top-container">
-                <div class="repair-wrapper">
-                    <div class="repair-title">
-                        <h2 class="repair-wrapper-title">TYPES OF REPAIR</h2>
-                        <img class="repair-title__img" src="./src/img/repair-title.svg" alt="repair-title">
+            <article class="types-of-repair">
+                <div class="types-of-repair__wrapper">
+                    <div class="types-of-repair__title-container">
+                        <h2 class="title-container-title">TYPES OF REPAIR</h2>
+                        <img class="title-container-img"
+                            src="./src/img/main/section-types-of-repair/article-types-of-repair/title-icon.svg"
+                            alt="repair-title">
                     </div>
-                    <div class="repair-up-container">
-                        <div class=" box box-1">
-                            <div class="box__smallbox smallbox-1">
-                                <h3 class="smallbox__title">Redecorating</h3>
-                                <ul class="smallbox__list">
+                    <div class="types-of-repair__content-container">
+                        <div class="box-container box-container_container1">
+                            <div class="repair-box">
+                                <h3 class="repair-box__title">Redecorating</h3>
+                                <ul class="repair-box__list">
                                     <li>Dismantling of old coatings</li>
                                     <li>Wallpapering</li>
                                     <li>Painting walls and ceilings</li>
@@ -140,13 +146,13 @@
                                     <li>Replacing sockets and switches</li>
                                     <li>Replacing doors</li>
                                 </ul>
-                                <button class="smallbox__button">from 900 rub / m2</button>
+                                <button class="repair-box__button">from 900 rub / m2</button>
                             </div>
                         </div>
-                        <div class="box box-2">
-                            <div class="box__smallbox smallbox-2">
-                                <h3 class="smallbox__title">Overhaul</h3>
-                                <ul class="smallbox__list">
+                        <div class="box-container box-container_container2">
+                            <div class="repair-box">
+                                <h3 class="repair-box__title">Overhaul</h3>
+                                <ul class="repair-box__list">
                                     <li>Dismantling of old coatings</li>
                                     <li>Wallpapering</li>
                                     <li>Painting walls and ceilings</li>
@@ -155,13 +161,13 @@
                                     <li>Replacing sockets and switches</li>
                                     <li>Replacing doors</li>
                                 </ul>
-                                <button class="smallbox__button">from 1800 rub / m2</button>
+                                <button class="repair-box__button">from 1800 rub / m2</button>
                             </div>
                         </div>
-                        <div class="box box-3">
-                            <div class="box__smallbox smallbox-3">
-                                <h3 class="smallbox__title">Designer Repair</h3>
-                                <ul class="smallbox__list">
+                        <div class="box-container box-container_container3">
+                            <div class="repair-box">
+                                <h3 class="repair-box__title">Designer Repair</h3>
+                                <ul class="repair-box__list">
                                     <li>Dismantling of old coatings</li>
                                     <li>Wallpapering</li>
                                     <li>Painting walls and ceilings</li>
@@ -170,86 +176,107 @@
                                     <li>Replacing sockets and switches</li>
                                     <li>Replacing doors</li>
                                 </ul>
-                                <button class="smallbox__button">from 4000 rub / m2</button>
+                                <button class="repair-box__button">from 4000 rub / m2</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="repair-bottom-container" id="measurement">
-               <div class="repair-bottom-container-wrapper">
-                    <div class="left-box">
-                        <img src="./src/img/repair-list-img-01.svg" alt="list-item" class="left-box__list-item">
-                        <img src="./src/img/repair-list-img-02.svg" alt="list-item" class="left-box__list-item">
-                        <img src="./src/img/repair-list-img-03.svg" alt="list-item" class="left-box__list-item">
-                        <img src="./src/img/repair-list-img-04.svg" alt="list-item" class="left-box__list-item">
+            </article>
+            <article class="request-for-measurer" id="measurement">
+                <div class="request-for-measurer__wrapper">
+                    <div class="request-for-measurer__left-box">
+                        <img src="./src/img/main/section-types-of-repair/article-request-for-measurer/list-item-1.svg"
+                            alt="list-item" class="left-box-item">
+                        <img src="./src/img/main/section-types-of-repair/article-request-for-measurer/list-item-2.svg"
+                            alt="list-item" class="left-box-item">
+                        <img src="./src/img/main/section-types-of-repair/article-request-for-measurer/list-item-3.svg"
+                            alt="list-item" class="left-box-item">
+                        <img src="./src/img/main/section-types-of-repair/article-request-for-measurer/list-item-4.svg"
+                            alt="list-item" class="left-box-item">
                     </div>
-                    <div class="right-box">
-                        <form class="right-box__form2">
-                            <p class="form2-title">Leave a request for free
+                    <div class="request-for-measurer__right-box">
+                        <form class="form-measurer">
+                            <p class="form-measurer__title">Leave a request for free
                                 departure of the measurer</p>
-                            <div class="form2-box">
-                                <label class="label2" for="user-name2">Name</label>
-                                <input id="user-name2" placeholder="What is your name:" name="name" type="text">
+                            <div class="form-measurer__item">
+                                <label class="item-form-measurer__label"
+                                    for="item-form-measurer__user-name">Name</label>
+                                <input id="item-form-measurer__user-name" placeholder="What is your name:" name="name"
+                                    type="text">
                             </div>
-                            <div class="form2-box">
-                                <label class="label2" for="user-phone2">Phone</label>
-                                <input id="user-phone2" placeholder="Your phone number:" name="phone" type="tel">
+                            <div class="form-measurer__item">
+                                <label class="item-form-measurer__label"
+                                    for="item-form-measurer__user-phone">Phone</label>
+                                <input id="item-form-measurer__user-phone" placeholder="Your phone number:" name="phone"
+                                    type="tel">
                             </div>
-                            <div class="form2-box">
-                                <label class="label2" for="user-email2">Email</label>
-                                <input id="user-email2" placeholder="Your email" name="email" type="email">
+                            <div class="form-measurer__item">
+                                <label class="item-form-measurer__label"
+                                    for="item-form-measurer__user-email">Email</label>
+                                <input id="item-form-measurer__user-email" placeholder="Your email" name="email"
+                                    type="email">
                             </div>
-                            <div class="form2-checkbox2">
-                                <input id="checkbox2" class="custom-checkbox2" name="checkbox2" type="checkbox">
-                                <label class="label2" for="checkbox2">I agree to the processing of personal data</label>
+                            <div class="form-measurer__checkbox">
+                                <input id="checkbox-form-measurer__input" class="checkbox-form-measurer__input"
+                                    name="checkbox" type="checkbox">
+                                <label class="checkbox-form-measurer__label" for="checkbox-form-measurer__input">I agree
+                                    to the processing of personal data</label>
                             </div>
-                            <button class="form2-button">Call the measurer</button>
+                            <button class="form-measurer-button">Call the measurer</button>
                         </form>
-                        <img class="right-box__img-save-cost" src="./src/img/repair-img-save-cost.svg"
-                            alt="right-box__img-save-cost">
+                        <img class="right-box-icon"
+                            src="./src/img/main/section-types-of-repair/article-request-for-measurer/icon-save-cost.svg"
+                            alt="icon-save-cost">
                     </div>
-               </div>
-            </div>
-            <div class="container3" id="reviews">
-                <div class="container3-wrapper">
-                    <div class="left-container">
-                        <h2 class="container3-title">We realize your <br>wildest fantasies</h2>
-                        <ul class="design-list">
-                            <li class="design-list__item"><a class="design-list__link" href="">American classic</a>
+                </div>
+            </article>
+            <article class="types-of-design" id="reviews">
+                <div class="types-of-design__wrapper">
+                    <div class="types-of-design__left-container">
+                        <h2 class="types-of-design__title">We realize your <br>wildest fantasies</h2>
+                        <ul class="types-of-design-list">
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">American classic</a>
                             </li>
-                            <li class="design-list__item"><a class="design-list__link" href="">Empire</a></li>
-                            <li class="design-list__item"><a class="design-list__link" href="">Classical</a></li>
-                            <li class="design-list__item"><a class="design-list__link" href="">Loft</a></li>
-                            <li class="design-list__item"><a class="design-list__link" href="">Minimalism</a></li>
-                            <li class="design-list__item"><a class="design-list__link" href="">Provence</a></li>
-                            <li class="design-list__item"><a class="design-list__link" href="">Romanticism</a></li>
-                            <li class="design-list__item"><a class="design-list__link" href="">Scandinavian
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">Empire</a></li>
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">Classical</a>
+                            </li>
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">Loft</a></li>
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">Minimalism</a>
+                            </li>
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">Provence</a>
+                            </li>
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">Romanticism</a>
+                            </li>
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">Scandinavian
                                     style</a></li>
-                            <li class="design-list__item"><a class="design-list__link" href="">Mediterranean
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">Mediterranean
                                     style</a></li>
-                            <li class="design-list__item"><a class="design-list__link" href="">High tech</a></li>
-                            <li class="design-list__item"><a class="design-list__link" href="">Eclecticism</a></li>
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">High tech</a></li>
+                            <li class="types-of-design-list__item"><a class="types-of-design-list__link" href="">Eclecticism</a></li>
                         </ul>
                     </div>
-                    <div class="right-container">
-                        <div class="img-box img-box1"><img src="./src/img/container3-img-box1.png"></div>
-                        <div class="img-box img-box2"><img src="./src/img/container3-img-box2.png"></div>
-                        <div class="img-box img-box3"><img src="./src/img/container3-img-box3.png"></div>
-                        <div class="img-box img-box4"><img src="./src/img/container3-img-box4.png"></div>
+                    <div class="types-of-design__right-container">
+                        <div class="types-of-design-img types-of-design-img_img1"><img
+                                src="./src/img/main/section-types-of-repair/article-types-of-design/img1.png"></div>
+                        <div class="types-of-design-img types-of-design-img_img2"><img
+                                src="./src/img/main/section-types-of-repair/article-types-of-design/img2.png"></div>
+                        <div class="types-of-design-img types-of-design-img_img3"><img
+                                src="./src/img/main/section-types-of-repair/article-types-of-design/img3.png"></div>
+                        <div class="types-of-design-img types-of-design-img_img4"><img
+                                src="./src/img/main/section-types-of-repair/article-types-of-design/img4.png"></div>
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
         <section class="section-clients">
             <div class="section-clients-wrapper">
                 <h2 class="clients-title">our clients</h2>
-                <img src="./src/img/section-clients-logo.svg" alt="clients-logo" class="clients-logo">
+                <img src="./src/img/main/section-clients/title-icon.svg" alt="clients-logo" class="clients-logo">
                 <p class="clients-subtitle">80% of our customers recommend us to their <br>friends and family.</p>
                 <div class="clients-container">
                     <div class="container-box">
                         <div class="box-smallbox">
-                            <img src="./src/img/section-clients-img1.png" alt="box-img1" class="box-img1">
+                            <img src="./src/img/main/section-clients/photo-img1.png" alt="photo-img1" class="box-img1">
                             <h3 class="box-title">Fedosova Maria <br>Konstantinovna</h3>
                         </div>
                         <p class="box-subtitle">I want to thank the guys for their work. We put your shower part in
@@ -260,11 +287,11 @@
                             faster than anticipated. Team mobile and professional. Works performed qualitatively without
                             comments.
                             Quality satisfied. Prices democratic. I recommend these masters.</p>
-                        <img src="./src/img/section-clients-img1-1.svg" alt="box-img1-1" class="box-img2">
+                        <img src="./src/img/main/section-clients/img1.svg" alt="img1" class="box-img2">
                     </div>
                     <div class="container-box">
                         <div class="box-smallbox">
-                            <img src="./src/img/section-clients-img2.png" alt="box-img2" class="box-img1">
+                            <img src="./src/img/main/section-clients/photo-img2.png" alt="photo-img2" class="box-img1">
                             <h3 class="box-title">Afanasyev Sergey <br>Alexandrovich</h3>
                         </div>
                         <p class="box-subtitle">I want to thank the guys for their work. We put your shower part in
@@ -275,11 +302,11 @@
                             faster than anticipated. Team mobile and professional. Works performed qualitatively without
                             comments.
                             Quality satisfied. Prices democratic. I recommend these masters.</p>
-                        <img src="./src/img/section-clients-img2-1.svg" alt="box-img2-1" class="box-img2">
+                        <img src="./src/img/main/section-clients/img2.svg" alt="img2" class="box-img2">
                     </div>
                     <div class="container-box">
                         <div class="box-smallbox">
-                            <img src="./src/img/section-clients-img3.png" alt="box-img3" class="box-img1">
+                            <img src="./src/img/main/section-clients/photo-img3.png" alt="photo-img3" class="box-img1">
                             <h3 class="box-title">Kiriev Egor <br>Leonidovich</h3>
                         </div>
                         <p class="box-subtitle">I want to thank the guys for their work. We put your shower part in
@@ -290,14 +317,14 @@
                             faster than anticipated. Team mobile and professional. Works performed qualitatively without
                             comments.
                             Quality satisfied. Prices democratic. I recommend these masters.</p>
-                        <img src="./src/img/section-clients-img3-1.svg" alt="box-img3-1" class="box-img2">
+                        <img src="./src/img/main/section-clients/img3.svg" alt="img3" class="box-img2">
                     </div>
                 </div>
             </div>
         </section>
         <section class="section-questions" id="contacts">
             <div class="section-questions-wripper">
-                <form class="question__form3">
+                <form class="questions__form3">
                     <h2 class="form3-title">have any questions?</h2>
                     <div class="form3-upbox">
                         <div class="form3-box form3-box_form3-box-1">
@@ -320,14 +347,14 @@
                     <button class="form3-button">Submit</button>
                 </form>
                 <div class="questions-contact">
-                    <h2 class="contact-title">Rostov-on-Don, Nansen St., 239 Shopping Center <br>Decorum Tel +7
+                    <h2 class="contact-title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7
                         (928) 768 32 29</h2>
-                    <a class="contact-link" href=""><img src="./src/img/section-questions-contact-icon-email.svg"
+                    <a class="contact-link" href=""><img src="./src/img/main/section-questions/email-icon.svg"
                             alt="icon-email" class="contact-icon"></a>
-                    <a class="contact-link" href=""><img src="./src/img/section-questions-contact-icon-instagram.svg"
+                    <a class="contact-link" href=""><img src="./src/img/main/section-questions/insta-icon.svg"
                             alt="icon-instagram" class="contact-icon"></a>
                 </div>
-                <div class="questions-map"><img src="./src/img/section-questions-map.png" alt="map-img" class="map-img">
+                <div class="questions-map"><img class="question-map-img" src="./src/img/main/section-questions/map-img.png" alt="map-img" >
                 </div>
             </div>
         </section>
