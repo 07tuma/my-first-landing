@@ -932,7 +932,7 @@ button {
 
 	&__button {
 		box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
-		
+
 		@media screen and (max-width: 768px) {
 			order: 2;
 		}
@@ -1599,7 +1599,7 @@ button {
 	}
 
 	.section-clients-wrapper {
-		width: 1186px;
+		width: 1236px;
 
 		@media screen and (min-width: 768px) and (max-width: 1280px) {
 			margin: 0 20px;
@@ -1622,7 +1622,7 @@ button {
 			line-height: 29px;
 			text-align: center;
 			color: $gray;
-			padding-bottom: 45px;
+			padding-bottom: 30px;
 		}
 		.clients-container {
 			width: 100%;
@@ -1632,7 +1632,21 @@ button {
 
 			.container-box {
 				max-width: 376px;
-				max-height: 428px;
+				max-height: 400px;
+				box-shadow: 0px 10px 50px rgb(0 0 0 / 4%);
+				padding: 14px 32px 0px 20px;
+
+				@media screen and (min-width: 768px) and (max-width: 1280px) {
+					padding: 5px 5px 5px 5px;
+									}
+
+				&_box2 {
+					margin: 0 54px;
+
+					@media screen and (min-width: 768px) and (max-width: 1280px) {
+						margin: 0;
+										}
+				}
 
 				.box-smallbox {
 					display: flex;
@@ -1657,7 +1671,7 @@ button {
 
 				.box-img2 {
 					margin-top: 35px;
-					margin-left: -50px;
+					margin-left: -70px;
 					width: 100%;
 				}
 			}
