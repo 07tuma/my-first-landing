@@ -374,6 +374,7 @@ h3 {
 
 h2 {
   color: #e3b873;
+  text-transform: uppercase;
 }
 
 button {
@@ -384,6 +385,7 @@ button {
   font-size: 11px;
   line-height: 15px;
   text-align: center;
+  text-transform: uppercase;
   cursor: pointer;
 }
 button:hover {
@@ -436,6 +438,7 @@ button:hover {
             justify-content: space-between;
     margin: 0 18px -1px 18px;
     max-width: 100%;
+    height: 57px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -449,6 +452,7 @@ button:hover {
   color: #e3b873;
   color: #e3b873;
   font-size: 11px;
+  line-height: 15px;
   text-transform: uppercase;
   padding: 0 90px 0 0;
 }
@@ -459,6 +463,8 @@ button:hover {
 }
 .header-wrapper__tel {
   white-space: nowrap;
+  font-size: 11px;
+  line-height: 15px;
   color: #e3b873;
   padding: 0 45px 0 66px;
 }
@@ -480,7 +486,6 @@ button:hover {
   height: 37px;
   padding: 6px 16px;
   font-style: italic;
-  text-transform: uppercase;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 }
@@ -508,6 +513,8 @@ button:hover {
 }
 .header-wrapper .navigation__menu_item {
   color: #ffffff;
+  font-size: 11px;
+  line-height: 15px;
   text-decoration: none;
   padding: 0 28px;
 }
@@ -551,15 +558,15 @@ button:hover {
   .section-main .section-main-wrapper {
     margin: 0 18px -1px 18px;
     max-width: 100%;
-    padding: 85px 0 100px 0;
+    padding: 85px 0 55px 0;
   }
 }
 .section-main .section-main-wrapper__title {
   font-family: "Yeseva One";
   font-size: 40px;
   line-height: 53px;
-  text-transform: uppercase;
   margin-block: 0;
+  text-transform: uppercase;
   padding: 0px 0px 0px 10px;
 }
 @media screen and (max-width: 768px) {
@@ -587,7 +594,7 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .section-main .section-main-wrapper__item {
-    padding: 50px 0px 60px 0px;
+    padding: 20px 0 0 0;
   }
 }
 .section-main .section-main-wrapper__button {
@@ -599,7 +606,7 @@ button:hover {
 @media screen and (max-width: 768px) {
   .section-main .section-main-wrapper__button {
     width: 100%;
-    margin: 0 0 26px 0;
+    margin: 35px 0 0 0;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 768px) {
@@ -613,6 +620,7 @@ button:hover {
 */
 .section-projects {
   background-color: #131313;
+  margin-bottom: -2px;
 }
 .section-projects__wrapper {
   max-width: 1171px;
@@ -631,7 +639,7 @@ button:hover {
             justify-content: flex-start;
     margin: 0 18px -1px 18px;
     width: auto;
-    padding: 58px 0 36px 0;
+    padding: 45px 0 36px 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -668,7 +676,6 @@ button:hover {
   font-size: 27px;
   line-height: 37px;
   letter-spacing: -0.07em;
-  text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .title-container__title {
@@ -679,7 +686,6 @@ button:hover {
 }
 .title-container__subtitle {
   padding-top: 3px;
-  font-size: 14px;
   line-height: 27px;
 }
 @media screen and (max-width: 768px) {
@@ -687,6 +693,8 @@ button:hover {
     font-size: 11px;
     line-height: 17px;
     text-align: center;
+    white-space: nowrap;
+    margin: 30px 0 15px 0;
   }
 }
 
@@ -697,7 +705,7 @@ button:hover {
 @media screen and (max-width: 768px) {
   .projects-img-for-mobile {
     opacity: 1;
-    padding: 70px 0 35px 0;
+    padding: 55px 0 0 0;
     width: 100%;
   }
 }
@@ -728,6 +736,11 @@ button:hover {
   padding-top: 16px;
   white-space: nowrap;
 }
+@media screen and (max-width: 768px) {
+  .parameters-box {
+    padding-top: 25px;
+  }
+}
 .parameters-box__title {
   font-size: 18px;
   line-height: 25px;
@@ -749,11 +762,16 @@ button:hover {
 @media screen and (max-width: 768px) {
   .parameters-box__subtitle {
     font-size: 11px;
-    line-height: 18px;
+    line-height: 15px;
   }
 }
 .parameters-box_box4 {
   padding-top: 34px;
+}
+@media screen and (max-width: 768px) {
+  .parameters-box_box4 {
+    padding-top: 40px;
+  }
 }
 
 .left-container-carousel {
@@ -795,7 +813,6 @@ button:hover {
 }
 .projects-list__link {
   font-family: "Yeseva One";
-  font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
   text-decoration: none;
@@ -887,10 +904,15 @@ button:hover {
   content: url(../img/line.svg);
 }
 .section-control .control-title {
-  text-transform: uppercase;
   color: #ffffff;
   font-size: 20px;
   line-height: 28px;
+}
+@media screen and (max-width: 768px) {
+  .section-control .control-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 .section-control .control-title-img {
   margin-left: 32px;
@@ -912,7 +934,6 @@ button:hover {
 }
 
 .control-form {
-  color: rgba(54, 54, 54, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,7 +963,7 @@ button:hover {
 @media screen and (max-width: 768px) {
   .control-form__item {
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 55px;
     width: 100%;
   }
 }
@@ -958,12 +979,15 @@ button:hover {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-top: -42px;
+    margin-top: -30px;
   }
 }
 
 .item-form-control__label {
   display: block;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(54, 54, 54, 0.5);
 }
 @media screen and (max-width: 768px) {
   .item-form-control__label {
@@ -987,18 +1011,23 @@ button:hover {
   }
 }
 #item-form-control__user-name::-webkit-input-placeholder {
+  line-height: 23px;
   color: #363636;
 }
 #item-form-control__user-name::-moz-placeholder {
+  line-height: 23px;
   color: #363636;
 }
 #item-form-control__user-name:-ms-input-placeholder {
+  line-height: 23px;
   color: #363636;
 }
 #item-form-control__user-name::-ms-input-placeholder {
+  line-height: 23px;
   color: #363636;
 }
 #item-form-control__user-name::placeholder {
+  line-height: 23px;
   color: #363636;
 }
 @media screen and (max-width: 768px) {
@@ -1040,18 +1069,23 @@ button:hover {
   }
 }
 #item-form-control__user-phone::-webkit-input-placeholder {
+  line-height: 23px;
   color: #363636;
 }
 #item-form-control__user-phone::-moz-placeholder {
+  line-height: 23px;
   color: #363636;
 }
 #item-form-control__user-phone:-ms-input-placeholder {
+  line-height: 23px;
   color: #363636;
 }
 #item-form-control__user-phone::-ms-input-placeholder {
+  line-height: 23px;
   color: #363636;
 }
 #item-form-control__user-phone::placeholder {
+  line-height: 23px;
   color: #363636;
 }
 @media screen and (max-width: 768px) {
@@ -1084,7 +1118,6 @@ button:hover {
           box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
   font-size: 13px;
   line-height: 27px;
-  text-transform: uppercase;
 }
 .control-form-button:hover {
   background: none;
@@ -1104,6 +1137,7 @@ button:hover {
 }
 
 .control-form-checkbox__label {
+  line-height: 23px;
   color: #181818;
   padding-top: 33px;
 }
@@ -1194,7 +1228,7 @@ button:hover {
 @media screen and (max-width: 768px) {
   .types-of-repair__wrapper {
     width: 100%;
-    padding: 127px 0 80px 0;
+    padding: 55px 0 80px 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -1229,11 +1263,10 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .types-of-repair__content-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 30px 0 0 0;
   }
 }
@@ -1242,8 +1275,13 @@ button:hover {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  text-transform: uppercase;
   color: #131313;
+}
+@media screen and (max-width: 768px) {
+  .title-container-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 .box-container {
@@ -1262,10 +1300,11 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .box-container {
-    margin-bottom: 250px;
+    margin-bottom: 170px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    height: 330px;
   }
 }
 .box-container_container1 {
@@ -1288,17 +1327,38 @@ button:hover {
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
+@media screen and (max-width: 768px) {
+  .repair-box {
+    margin-top: 230px;
+    height: 240px;
+  }
+}
 .repair-box__title {
   font-size: 18px;
   line-height: 25px;
   color: #363636;
   margin: 25px 0 5px 34px;
 }
+@media screen and (max-width: 768px) {
+  .repair-box__title {
+    font-size: 15px;
+    line-height: 21px;
+    margin: 25px 0 5px 20px;
+  }
+}
 .repair-box__list {
   font-size: 13px;
   line-height: 27px;
   color: #959595;
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .repair-box__list {
+    font-size: 13px;
+    line-height: 169.8%;
+    margin: 0 0 0 30px;
+    padding: 0;
+  }
 }
 .repair-box__button {
   background: #e3b873;
@@ -1309,7 +1369,6 @@ button:hover {
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  text-transform: uppercase;
   width: 228px;
   height: 54px;
   margin-top: 17px;
@@ -1318,6 +1377,15 @@ button:hover {
   background: #f0f0f0;
   border-color: #e3b873;
   color: #e3b873;
+}
+@media screen and (max-width: 768px) {
+  .repair-box__button {
+    font-size: 15px;
+    line-height: 21px;
+    width: 190px;
+    height: 40px;
+    margin-left: -10px;
+  }
 }
 
 /*
@@ -1395,7 +1463,6 @@ button:hover {
   max-width: 506px;
   height: 480px;
   background-color: #131313;
-  color: rgba(54, 54, 54, 0.5);
   padding-top: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1438,8 +1505,6 @@ button:hover {
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
   font-size: 13px;
   line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 50px;
@@ -1447,6 +1512,8 @@ button:hover {
 
 .item-form-measurer__label {
   display: block;
+  font-size: 13px;
+  line-height: 21px;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1461,26 +1528,31 @@ button:hover {
 }
 #item-form-measurer__user-name::-webkit-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
 #item-form-measurer__user-name::-moz-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
 #item-form-measurer__user-name:-ms-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
 #item-form-measurer__user-name::-ms-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
 #item-form-measurer__user-name::placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
@@ -1489,6 +1561,7 @@ button:hover {
   background-color: #131313;
   width: 100%;
   color: #ffffff;
+  line-height: 23px;
   border: none;
   outline: none;
   padding: 8px 0;
@@ -1519,6 +1592,7 @@ button:hover {
   background-color: #131313;
   width: 100%;
   color: #ffffff;
+  line-height: 23px;
   border: none;
   outline: none;
   padding: 8px 0;
@@ -1546,6 +1620,7 @@ button:hover {
 }
 
 .checkbox-form-measurer__label {
+  line-height: 23px;
   color: #ffffff;
 }
 .checkbox-form-measurer__input {
@@ -1626,6 +1701,9 @@ button:hover {
   .types-of-design__wrapper {
     margin: 0 18px 0 18px;
     max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -1640,30 +1718,24 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .types-of-design__left-container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding: 0;
   }
 }
 .types-of-design__title {
   font-size: 27px;
   line-height: 37px;
-  text-transform: uppercase;
   padding: 115px 0 15px 0;
 }
 @media screen and (max-width: 768px) {
   .types-of-design__title {
     text-align: center;
     padding: 0;
-    margin: -80px auto;
+    margin: -50px auto;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 .types-of-design__right-container {
@@ -1764,7 +1836,6 @@ button:hover {
   padding-bottom: 10px;
   font-size: 20px;
   line-height: 28px;
-  text-transform: uppercase;
   color: #131313;
 }
 .section-clients .section-clients-wrapper .clients-subtitle {
@@ -1803,7 +1874,7 @@ button:hover {
 }
 .section-clients .section-clients-wrapper .clients-container .container-box .box-subtitle {
   font-size: 13px;
-  line-height: 24px;
+  line-height: 23px;
   color: #959595;
   text-align: start;
   padding: 5px 0 0 0;
@@ -1899,7 +1970,6 @@ button:hover {
 .section-questions .questions__form3 .form3-title {
   font-size: 20px;
   line-height: 28px;
-  text-transform: uppercase;
   color: #ffffff;
   padding: 15px 0 30px 0;
   text-align: center;
@@ -1938,7 +2008,14 @@ button:hover {
 .section-questions .questions__form3 .form3-box .label3 {
   display: block;
   padding-bottom: 8px;
+  font-size: 13px;
+  line-height: 21px;
   color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .section-questions .questions__form3 .form3-box .label3 {
+    padding: 0;
+  }
 }
 .section-questions .questions__form3 .form3-box_form3-box-1 {
   padding-left: 180px;
@@ -1953,7 +2030,7 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .section-questions .questions__form3 .form3-box_form3-box-2 {
-    padding: 63px 0 0 0;
+    padding: 65px 0 0 0;
   }
 }
 .section-questions .questions__form3 .form3-box_form3-box-3 {
@@ -1961,7 +2038,7 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .section-questions .questions__form3 .form3-box_form3-box-3 {
-    padding: 63px 0 0 0;
+    padding: 60px 0 0 0;
   }
 }
 .section-questions .questions__form3 #user-name3 {
@@ -1976,32 +2053,38 @@ button:hover {
 }
 .section-questions .questions__form3 #user-name3::-webkit-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
 .section-questions .questions__form3 #user-name3::-moz-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
 .section-questions .questions__form3 #user-name3:-ms-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
 .section-questions .questions__form3 #user-name3::-ms-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
 .section-questions .questions__form3 #user-name3::placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
   border: none;
 }
 @media screen and (max-width: 768px) {
   .section-questions .questions__form3 #user-name3 {
     width: 100%;
+    padding: 0 0 8px 0;
   }
 }
 .section-questions .questions__form3 #user-phone3 {
@@ -2016,27 +2099,33 @@ button:hover {
 }
 .section-questions .questions__form3 #user-phone3::-webkit-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 .section-questions .questions__form3 #user-phone3::-moz-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 .section-questions .questions__form3 #user-phone3:-ms-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 .section-questions .questions__form3 #user-phone3::-ms-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 .section-questions .questions__form3 #user-phone3::placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 @media screen and (max-width: 768px) {
   .section-questions .questions__form3 #user-phone3 {
     width: 100%;
+    padding: 0 0 8px 0;
   }
 }
 .section-questions .questions__form3 #user-question3 {
@@ -2051,27 +2140,33 @@ button:hover {
 }
 .section-questions .questions__form3 #user-question3::-webkit-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 .section-questions .questions__form3 #user-question3::-moz-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 .section-questions .questions__form3 #user-question3:-ms-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 .section-questions .questions__form3 #user-question3::-ms-input-placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 .section-questions .questions__form3 #user-question3::placeholder {
   color: #ffffff;
+  line-height: 23px;
   background-color: #131313;
 }
 @media screen and (max-width: 768px) {
   .section-questions .questions__form3 #user-question3 {
     max-width: 768px;
+    padding: 0 0 8px 0;
   }
 }
 .section-questions .questions__form3 .form3-checkbox3 {
@@ -2082,11 +2177,14 @@ button:hover {
 @media screen and (max-width: 768px) {
   .section-questions .questions__form3 .form3-checkbox3 {
     padding: 25px 0 67px 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 .section-questions .questions__form3 .form3-checkbox3 .label3 {
   color: #ffffff;
   padding-top: 30px;
+  line-height: 23px;
 }
 @media screen and (max-width: 768px) {
   .section-questions .questions__form3 .form3-checkbox3 .label3 {
@@ -2139,9 +2237,8 @@ button:hover {
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
   font-size: 13px;
-  line-height: 21px;
+  line-height: 27px;
   text-align: center;
-  text-transform: uppercase;
   margin: 45px 0 0 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -2174,18 +2271,20 @@ button:hover {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  text-transform: uppercase;
   margin: 35px 0;
   max-width: 600px;
 }
 @media screen and (max-width: 768px) {
   .section-questions .contact-title {
     margin: 20px 0;
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
   .section-questions .contact-link {
     margin-bottom: 60px;
+    width: 39px;
   }
 }
 .section-questions .questions-map {
@@ -2249,6 +2348,8 @@ button:hover {
 }
 .footer-wrapper__tel {
   white-space: nowrap;
+  font-size: 11px;
+  line-height: 15px;
   color: #e3b873;
   padding: 0 45px 0 66px;
 }
@@ -2264,7 +2365,6 @@ button:hover {
   width: 161px;
   height: 37px;
   font-style: italic;
-  text-transform: uppercase;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 }
@@ -2292,6 +2392,8 @@ button:hover {
 }
 .footer-wrapper .navigation__menu_item {
   color: #ffffff;
+  font-size: 11px;
+  line-height: 15px;
   text-decoration: none;
   padding: 0 28px;
 }
