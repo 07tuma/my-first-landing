@@ -614,6 +614,14 @@ button:hover {
     width: 50%;
   }
 }
+.section-main .section-main-wrapper__button_right-button:before {
+  content: "SUBMIT YOUR APPLICATION";
+}
+@media screen and (max-width: 768px) {
+  .section-main .section-main-wrapper__button_right-button:before {
+    content: "APPLICATION";
+  }
+}
 
 /*
 * section-projects =====================================
@@ -624,7 +632,7 @@ button:hover {
 }
 .section-projects__wrapper {
   max-width: 1171px;
-  padding: 36px 0 400px 0;
+  padding: 110px 0 400px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,7 +673,7 @@ button:hover {
 
 .title-container {
   padding-top: 44px;
-  padding-bottom: 18px;
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
   .title-container {
@@ -776,7 +784,7 @@ button:hover {
 
 .left-container-carousel {
   font-size: 45px;
-  padding-top: 46px;
+  padding-top: 90px;
 }
 @media screen and (max-width: 768px) {
   .left-container-carousel {
@@ -882,7 +890,7 @@ button:hover {
   }
 }
 .section-control__video {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .section-control .video-img {
   width: 100%;
@@ -999,7 +1007,7 @@ button:hover {
   width: 231px;
   border: none;
   outline: none;
-  padding: 8px 0;
+  padding: 2px 0 8px 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 @media screen and (max-width: 768px) {
@@ -1057,7 +1065,7 @@ button:hover {
   width: 231px;
   border: none;
   outline: none;
-  padding: 8px 0;
+  padding: 2px 0 8px 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 @media screen and (max-width: 768px) {
@@ -1223,7 +1231,7 @@ button:hover {
 }
 .types-of-repair__wrapper {
   width: 1236px;
-  padding: 147px 0 26px 0;
+  padding: 125px 0 26px 0;
 }
 @media screen and (max-width: 768px) {
   .types-of-repair__wrapper {
@@ -1412,7 +1420,7 @@ button:hover {
           justify-content: flex-start;
   max-width: 1236px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 85px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1523,7 +1531,7 @@ button:hover {
   color: #ffffff;
   border: none;
   outline: none;
-  padding: 8px 0;
+  padding: 3px 0 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 #item-form-measurer__user-name::-webkit-input-placeholder {
@@ -1564,7 +1572,7 @@ button:hover {
   line-height: 23px;
   border: none;
   outline: none;
-  padding: 8px 0;
+  padding: 3px 0 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 #item-form-measurer__user-phone::-webkit-input-placeholder {
@@ -1595,7 +1603,7 @@ button:hover {
   line-height: 23px;
   border: none;
   outline: none;
-  padding: 8px 0;
+  padding: 3px 0 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 #item-form-measurer__user-email::-webkit-input-placeholder {
@@ -1971,7 +1979,7 @@ button:hover {
   font-size: 20px;
   line-height: 28px;
   color: #ffffff;
-  padding: 15px 0 30px 0;
+  padding: 14px 0 27px 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2007,7 +2015,6 @@ button:hover {
 }
 .section-questions .questions__form3 .form3-box .label3 {
   display: block;
-  padding-bottom: 8px;
   font-size: 13px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.5);
@@ -2018,7 +2025,7 @@ button:hover {
   }
 }
 .section-questions .questions__form3 .form3-box_form3-box-1 {
-  padding-left: 180px;
+  padding-left: 190px;
 }
 @media screen and (max-width: 768px) {
   .section-questions .questions__form3 .form3-box_form3-box-1 {
@@ -2034,7 +2041,7 @@ button:hover {
   }
 }
 .section-questions .questions__form3 .form3-box_form3-box-3 {
-  padding: 38px 0 8px 181px;
+  padding: 44px 0 14px 190px;
 }
 @media screen and (max-width: 768px) {
   .section-questions .questions__form3 .form3-box_form3-box-3 {
@@ -2048,7 +2055,7 @@ button:hover {
   outline: none;
   padding: 0;
   width: 231px;
-  padding: 8px 0;
+  padding: 3px 0 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .section-questions .questions__form3 #user-name3::-webkit-input-placeholder {
@@ -2094,7 +2101,7 @@ button:hover {
   outline: none;
   padding: 0;
   width: 231px;
-  padding: 8px 0;
+  padding: 3px 0 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .section-questions .questions__form3 #user-phone3::-webkit-input-placeholder {
@@ -2135,7 +2142,7 @@ button:hover {
   outline: none;
   padding: 0;
   max-width: 516px;
-  padding: 8px 0;
+  padding: 3px 0 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .section-questions .questions__form3 #user-question3::-webkit-input-placeholder {
@@ -2271,7 +2278,7 @@ button:hover {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  margin: 35px 0;
+  margin: 15px 0;
   max-width: 600px;
 }
 @media screen and (max-width: 768px) {

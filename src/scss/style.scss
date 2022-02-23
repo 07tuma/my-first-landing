@@ -610,6 +610,17 @@ button {
 			@media screen and (min-width: 425px) and (max-width: 768px) {
 				width: 50%;
 			}
+
+			&_right-button {
+				&:before {
+					content: "SUBMIT YOUR APPLICATION";
+				}
+				@media screen and (max-width: 768px) {
+					&:before {
+						content: "APPLICATION";
+					}
+				}
+			}
 		}
 	}
 }
@@ -624,7 +635,7 @@ button {
 
 	&__wrapper {
 		max-width: 1171px;
-		padding: 36px 0 400px 0;
+		padding: 110px 0 400px 0;
 		display: flex;
 		margin: 0 auto;
 
@@ -658,7 +669,7 @@ button {
 
 .title-container {
 	padding-top: 44px;
-	padding-bottom: 18px;
+	padding-bottom: 10px;
 
 	@media screen and (max-width: 768px) {
 		padding: 0;
@@ -761,7 +772,7 @@ button {
 
 .left-container-carousel {
 	font-size: 45px;
-	padding-top: 46px;
+	padding-top: 90px;
 
 	@media screen and (max-width: 768px) {
 		display: none;
@@ -848,7 +859,7 @@ button {
 	}
 
 	&__video {
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 	}
 
 	.video-img {
@@ -954,7 +965,7 @@ button {
 	width: 231px;
 	border: none;
 	outline: none;
-	padding: 8px 0;
+	padding: 2px 0 8px 0;
 	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 
 	@media screen and (max-width: 768px) {
@@ -978,7 +989,7 @@ button {
 	width: 231px;
 	border: none;
 	outline: none;
-	padding: 8px 0;
+	padding: 2px 0 8px 0;
 	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 
 	@media screen and (max-width: 768px) {
@@ -1095,7 +1106,7 @@ button {
 
 	&__wrapper {
 		width: 1236px;
-		padding: 147px 0 26px 0;
+		padding: 125px 0 26px 0;
 
 		@media screen and (max-width: 768px) {
 			width: 100%;
@@ -1230,8 +1241,8 @@ button {
 			font-size: 15px;
 			line-height: 21px;
 			width: 190px;
-		height: 40px;
-		margin-left: -10px;
+			height: 40px;
+			margin-left: -10px;
 		}
 	}
 }
@@ -1256,7 +1267,7 @@ button {
 		justify-content: flex-start;
 		max-width: 1236px;
 		margin: 0 auto;
-		padding-top: 100px;
+		padding-top: 85px;
 		justify-content: space-between;
 
 		@media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -1355,7 +1366,7 @@ button {
 	color: $white;
 	border: none;
 	outline: none;
-	padding: 8px 0;
+	padding: 3px 0 8px 0;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
 	&::placeholder {
@@ -1373,7 +1384,7 @@ button {
 	line-height: 23px;
 	border: none;
 	outline: none;
-	padding: 8px 0;
+	padding: 3px 0 8px 0;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
 	&::placeholder {
@@ -1389,7 +1400,7 @@ button {
 	line-height: 23px;
 	border: none;
 	outline: none;
-	padding: 8px 0;
+	padding: 3px 0 8px 0;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
 	&::placeholder {
@@ -1724,7 +1735,7 @@ button {
 				font-size: 20px;
 				line-height: 28px;
 				color: $white;
-				padding: 15px 0 30px 0;
+				padding: 14px 0 27px 0;
 				text-align: center;
 
 				@media screen and (max-width: 768px) {
@@ -1750,7 +1761,6 @@ button {
 
 				.label3 {
 					display: block;
-					padding-bottom: 8px;
 					font-size: 13px;
 					line-height: 21px;
 					color: rgba(255, 255, 255, 0.5);
@@ -1761,7 +1771,7 @@ button {
 				}
 
 				&_form3-box-1 {
-					padding-left: 180px;
+					padding-left: 190px;
 
 					@media screen and (max-width: 768px) {
 						padding: 63px 0 0 0;
@@ -1777,7 +1787,7 @@ button {
 				}
 
 				&_form3-box-3 {
-					padding: 38px 0 8px 181px;
+					padding: 44px 0 14px 190px;
 
 					@media screen and (max-width: 768px) {
 						padding: 60px 0 0 0;
@@ -1792,7 +1802,7 @@ button {
 				outline: none;
 				padding: 0;
 				width: 231px;
-				padding: 8px 0;
+				padding: 3px 0 8px 0;
 				border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
 				&::placeholder {
@@ -1814,7 +1824,7 @@ button {
 				outline: none;
 				padding: 0;
 				width: 231px;
-				padding: 8px 0;
+				padding: 3px 0 8px 0;
 				border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
 				&::placeholder {
@@ -1836,7 +1846,7 @@ button {
 				outline: none;
 				padding: 0;
 				max-width: 516px;
-				padding: 8px 0;
+				padding: 3px 0 8px 0;
 				border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
 				&::placeholder {
@@ -1938,7 +1948,7 @@ button {
 		font-size: 20px;
 		line-height: 28px;
 		text-align: center;
-		margin: 35px 0;
+		margin: 15px 0;
 		max-width: 600px;
 
 		@media screen and (max-width: 768px) {
