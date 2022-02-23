@@ -410,11 +410,6 @@ button {
 	}
 }
 
-.section-main-wrapper__button_left-button {
-	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-	border-radius: 2px;
-}
-
 .button_with-radius {
 	border-radius: 2px;
 }
@@ -601,6 +596,7 @@ button {
 			height: 51px;
 			font-size: 11px;
 			margin-right: 17px;
+			box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
 
 			@media screen and (max-width: 768px) {
 				width: 100%;
@@ -935,6 +931,8 @@ button {
 	}
 
 	&__button {
+		box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+		
 		@media screen and (max-width: 768px) {
 			order: 2;
 		}
