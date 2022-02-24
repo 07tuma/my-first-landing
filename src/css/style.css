@@ -37,11 +37,6 @@ body {
     max-width: 2500px;
   }
 }
-@media screen and (max-width: 768px) {
-  body {
-    min-width: 375px;
-  }
-}
 
 /**
    * Render the `main` element consistently in IE.
