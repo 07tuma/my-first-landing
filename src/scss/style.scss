@@ -692,17 +692,41 @@ button {
 		}
 	}
 }
-.projects-img-for-mobile {
+
+.project-for-mobile {
 	opacity: 0;
-	width: 0;
+
+	&__img {
+		width: 100%;
+	}
+
+	&__arrows {
+		width: 100%;
+		justify-content: space-between;
+    display: flex;
+	margin: -150px 0 105px 0;
+
+	@media screen and (min-width: 550px) and (max-width: 768px) {
+		margin: -200px 0 155px 0;
+	}
+		}
+
+	&__arrow1 {
+		padding-left: 14px;
+	}
+	&__arrow2 {
+		padding-right: 14px;
+		}
+
+	&__arrow2-img {
+		transform: rotate(180deg);
+	}
 
 	@media screen and (max-width: 768px) {
 		opacity: 1;
 		padding: 55px 0 0 0;
-		width: 100%;
 	}
 }
-
 .parameters-container {
 	height: 145px;
 	display: inline-flex;
@@ -763,11 +787,34 @@ button {
 }
 
 .left-container-carousel {
-	font-size: 45px;
-	padding-top: 90px;
+	font-size: 38px;
+	padding-top: 95px;
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		cursor: pointer;
+	}
 
 	@media screen and (max-width: 768px) {
 		display: none;
+	}
+
+	.carousel-dot1 {
+		font-size: 25px;
+		padding-left: 26px;
+	}
+
+	.carousel-dot2 {
+		color: rgba(255, 255, 255, 0.3);
+		font-size: 25px;
+		padding: 0 15px;
+	}
+
+	.carousel-dot3 {
+		color: rgba(255, 255, 255, 0.3);
+		font-size: 25px;
+		padding-right: 25px;
 	}
 }
 
@@ -1060,7 +1107,7 @@ button {
 		flex-shrink: 0;
 		flex-grow: 0;
 		border: 1px solid #adb5bd;
-		border-radius: 0.25em;
+		border-radius: 1px;
 		margin-right: 0.5em;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -1429,7 +1476,7 @@ button {
 		flex-shrink: 0;
 		flex-grow: 0;
 		border: 1px solid #adb5bd;
-		border-radius: 0.25em;
+		border-radius: 1px;
 		margin-right: 0.5em;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -1633,14 +1680,14 @@ button {
 
 				@media screen and (min-width: 768px) and (max-width: 1280px) {
 					padding: 5px 5px 5px 5px;
-									}
+				}
 
 				&_box2 {
 					margin: 0 54px;
 
 					@media screen and (min-width: 768px) and (max-width: 1280px) {
 						margin: 0;
-										}
+					}
 				}
 
 				.box-smallbox {
@@ -1907,7 +1954,7 @@ button {
 					flex-shrink: 0;
 					flex-grow: 0;
 					border: 1px solid #adb5bd;
-					border-radius: 0.25em;
+					border-radius: 1px;
 					margin-right: 0.5em;
 					background-repeat: no-repeat;
 					background-position: center center;

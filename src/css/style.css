@@ -697,15 +697,41 @@ button:hover {
   }
 }
 
-.projects-img-for-mobile {
+.project-for-mobile {
   opacity: 0;
-  width: 0;
+}
+.project-for-mobile__img {
+  width: 100%;
+}
+.project-for-mobile__arrows {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -150px 0 105px 0;
+}
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  .project-for-mobile__arrows {
+    margin: -200px 0 155px 0;
+  }
+}
+.project-for-mobile__arrow1 {
+  padding-left: 14px;
+}
+.project-for-mobile__arrow2 {
+  padding-right: 14px;
+}
+.project-for-mobile__arrow2-img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 @media screen and (max-width: 768px) {
-  .projects-img-for-mobile {
+  .project-for-mobile {
     opacity: 1;
     padding: 55px 0 0 0;
-    width: 100%;
   }
 }
 
@@ -774,13 +800,36 @@ button:hover {
 }
 
 .left-container-carousel {
-  font-size: 45px;
-  padding-top: 90px;
+  font-size: 38px;
+  padding-top: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.left-container-carousel:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .left-container-carousel {
     display: none;
   }
+}
+.left-container-carousel .carousel-dot1 {
+  font-size: 25px;
+  padding-left: 26px;
+}
+.left-container-carousel .carousel-dot2 {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 25px;
+  padding: 0 15px;
+}
+.left-container-carousel .carousel-dot3 {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 25px;
+  padding-right: 25px;
 }
 
 .right-container-image {
@@ -1179,7 +1228,7 @@ button:hover {
       -ms-flex-positive: 0;
           flex-grow: 0;
   border: 1px solid #adb5bd;
-  border-radius: 0.25em;
+  border-radius: 1px;
   margin-right: 0.5em;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1654,7 +1703,7 @@ button:hover {
       -ms-flex-positive: 0;
           flex-grow: 0;
   border: 1px solid #adb5bd;
-  border-radius: 0.25em;
+  border-radius: 1px;
   margin-right: 0.5em;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2237,7 +2286,7 @@ button:hover {
       -ms-flex-positive: 0;
           flex-grow: 0;
   border: 1px solid #adb5bd;
-  border-radius: 0.25em;
+  border-radius: 1px;
   margin-right: 0.5em;
   background-repeat: no-repeat;
   background-position: center center;
