@@ -152,6 +152,25 @@ function initSlider(options) {
 			moveSlider(nextNumber);
 		}, options.autoplayInterval);
 	}
+
+	let winSize = innerWidth;
+
+let needWidth = winSize / 2;
+let needWidthMobile = winSize - 36;
+let needHeight = winSize / 1.5;
+
+console.log(needWidthMobile);
+
+let changeSize = function() {
+	if (winSize <1440 && winSize >1024){
+	sliderImages.style.width= `${needWidth}px`;
+} else if (winSize <=768) {
+	sliderImages.style.width= `${needWidthMobile}px`;
+	sliderImages.style.height= `${needHeight}px`;
+}
+}
+
+changeSize();
 }
 
 let sliderOptions = {
@@ -164,3 +183,5 @@ let sliderOptions = {
 document.addEventListener("DOMContentLoaded", () => {
 	initSlider(sliderOptions);
 });
+
+

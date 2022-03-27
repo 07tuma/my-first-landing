@@ -647,6 +647,18 @@ button:hover {
     margin: 0 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-projects__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 .section-projects__left-container {
   -ms-flex-preferred-size: 42%;
       flex-basis: 42%;
@@ -657,15 +669,8 @@ button:hover {
         flex-basis: 100%;
   }
 }
-@media screen and (max-width: 768px) {
-  .section-projects__right-container {
-    display: none;
-  }
-}
-
 .title-container {
   padding-top: 44px;
-  padding-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
   .title-container {
@@ -733,10 +738,9 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .project-for-mobile {
-    opacity: 1;
-    padding: 55px 0 0 0;
-    width: 100%;
-    height: 100%;
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
 }
 
@@ -755,16 +759,24 @@ button:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    position: relative;
+    top: 500px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .parameters-container {
+    top: 280px;
   }
 }
 
 .up-parameters-box {
-  padding-right: 60px;
+  padding-right: 40px;
 }
 
 .parameters-box {
-  padding-top: 16px;
   white-space: nowrap;
+  min-width: 145px;
+  margin: 35px 0 45px 0;
 }
 @media screen and (max-width: 768px) {
   .parameters-box {
@@ -793,14 +805,6 @@ button:hover {
   .parameters-box__subtitle {
     font-size: 11px;
     line-height: 15px;
-  }
-}
-.parameters-box_box4 {
-  padding-top: 34px;
-}
-@media screen and (max-width: 768px) {
-  .parameters-box_box4 {
-    padding-top: 40px;
   }
 }
 
@@ -922,11 +926,6 @@ button:hover {
   .section-control .section-control-wrapper {
     margin: 0 18px 0 18px;
     max-width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .section-control .section-control-wrapper {
-    margin: 0 20px;
   }
 }
 .section-control__title {
@@ -2488,21 +2487,30 @@ button:hover {
 /*
 * slider JS ===================================================
 */
-.slider {
-  position: relative;
-  margin: 20px 0;
-}
-
 .slider__images {
-  position: relative;
   width: 679px;
   height: 482px;
 }
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .slider__images {
+    width: 579px;
+    height: 410px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__images {
+    position: relative;
+    top: -265px;
+    width: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .slider__images {
+    top: -250px;
+  }
+}
 
 .slider__images-title {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -2514,11 +2522,8 @@ button:hover {
 .slider__images .image {
   background-size: cover;
   background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+  width: 0;
+  height: 0;
   opacity: 0;
   -webkit-transition: opacity 800ms ease;
   transition: opacity 800ms ease;
@@ -2526,41 +2531,73 @@ button:hover {
 
 .slider__images .image.active {
   opacity: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .slider__arrows {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #959595;
-}
-
-.slider__arrow {
-  position: absolute;
-  font-size: 38px;
-  text-align: center;
-  cursor: pointer;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 115px 0 0 0;
+  width: 100%;
+  color: #959595;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .slider__arrows {
+    margin: 100px 0 100px 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__arrows {
+    position: relative;
+    top: -300px;
+    z-index: 1;
+    margin: 0 0 0 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.slider__arrow.left {
-  left: -475px;
-  bottom: 0px;
+.slider__arrow {
+  font-size: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__arrow.left {
+    background-image: url(/src/img/arrow-button.svg);
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 800ms ease;
+    transition: opacity 800ms ease;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 10px;
+  }
 }
 
 .slider__arrow.right {
-  left: -345px;
-  bottom: 0px;
+  margin-left: 110px;
+}
+@media screen and (max-width: 768px) {
+  .slider__arrow.right {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 14px 0 0;
+    background-image: url(/src/img/arrow-button.svg);
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: opacity 800ms ease;
+    transition: opacity 800ms ease;
+  }
 }
 
 .slider__dots {
@@ -2570,10 +2607,20 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  left: -429px;
-  bottom: 17px;
-  width: 12%;
+  margin: -27px 0 0 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .slider__dots {
+    margin: -127px 0 100px 190px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__dots {
+    opacity: 0;
+  }
 }
 
 .slider__dots-item {
@@ -2596,16 +2643,18 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  top: -50px;
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
   .slider__links {
     display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .slider__links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -2634,7 +2683,12 @@ button:hover {
 
 .slider__link-item.n1 {
   width: 110px;
-  margin: 0 60px;
+  margin: 0 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .slider__link-item.n1 {
+    margin: 0 15px;
+  }
 }
 
 .slider__link-item.n2 {
