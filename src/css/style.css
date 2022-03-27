@@ -2571,7 +2571,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   .slider__arrow.left {
-    background-image: url(../src/img/arrow-button.svg);
+    background-image: url(../img/arrow-button.svg);
     background-repeat: no-repeat;
     -webkit-transition: opacity 800ms ease;
     transition: opacity 800ms ease;
@@ -2591,7 +2591,7 @@ button:hover {
     white-space: nowrap;
     overflow: hidden;
     margin: 0 14px 0 0;
-    background-image: url(../src/img/arrow-button.svg);
+    background-image: url("../img/arrow-button.svg");
     background-repeat: no-repeat;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
