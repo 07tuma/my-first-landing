@@ -81,12 +81,12 @@ function initSlider(options) {
 			} else if (curNumber === 1) {
 				city.innerHTML = '<p>Sochi Thieves</p>';
 				time.innerHTML = '<p>4 months</p>';
-				area.innerHTML = '<p>90 m2</p>';
+				area.innerHTML = '<p>105 m2</p>';
 				cost.innerHTML = '<p>Upon request</p>';
 			} else if (curNumber === 2) {
 				city.innerHTML = '<p>Rostov-on-Don, Patriotic</p>';
 				time.innerHTML = '<p>3 months</p>';
-				area.innerHTML = '<p>70 m2</p>';
+				area.innerHTML = '<p>93 m2</p>';
 				cost.innerHTML = '<p>Upon request</p>';
 			}
 			
