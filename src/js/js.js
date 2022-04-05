@@ -5,7 +5,7 @@ let images = [{
 	url: "./src/img/main/section-projects/gallery-image-2.png",
 	title: "Sochi Thieves",
 	}, {
-	url: "./src/img/main/section-main/background-img.jpg",
+	url: "./src/img/main/section-projects/gallery-image-3.png",
 	title: "Rostov-on-Don, Patriotic",
 	}];
 
