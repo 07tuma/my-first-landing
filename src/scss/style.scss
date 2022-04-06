@@ -2032,18 +2032,20 @@ button {
 		}
 	}
 
-	.questions-map {
-		text-align: center;
+	.map {
+		margin: 20px 0 90px 0;
+width: 600px;
+height: 400px;
 
-		.question-map-img {
-			padding-bottom: 60px;
-			width: 100%;
-
-			@media screen and (max-width: 768px) {
-				height: 100%;
-				padding: 25px 0;
+			@media screen and (max-width: 620px) {
+				width: 500px;
+				height: 300px;
 			}
-		}
+
+			@media screen and (max-width: 530px) {
+				width: 350px;
+				height: 250px;
+			}
 	}
 }
 
